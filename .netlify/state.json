@@ -1,0 +1,20 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Balatonalmádi",
+			"country": {
+				"code": "HU",
+				"name": "Hungary"
+			},
+			"subdivision": {
+				"code": "VE",
+				"name": "Veszprém megye"
+			},
+			"timezone": "Europe/Budapest",
+			"latitude": 47.0369,
+			"longitude": 18.0325,
+			"postalCode": "8220"
+		},
+		"timestamp": 1747499750891
+	}
+}

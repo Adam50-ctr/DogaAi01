@@ -1,0 +1,63 @@
+@media (min-width: 640px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  #result {
+    font-size: 1.1rem;
+  }
+}
+
+/* Animációk */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Testreszabott input dizájn */
+input[type="file"] {
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #f9fafb;
+  border: 1px solid #cbd5e0;
+  transition: all 0.3s ease;
+}
+
+input[type="file"]:hover {
+  background-color: #edf2f7;
+  border-color: #a0aec0;
+  cursor: pointer;
+}
+
+/* Scrollbar dizájn */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #60a5fa;
+  border-radius: 6px;
+}
+
+/* Térközök és reszponzivitás */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.75rem;
+  }
+  button {
+    padding: 0.75rem 1.5rem;
+  }
+}
