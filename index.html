@@ -3,6 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A DogaAI segít megjósolni a dolgozati kérdéseket feltöltött PDF alapján. Gyors, pontos, tanárbarát megoldás."
+    />
+    <meta
+      name="keywords"
+      content="dolgozat, doga, AI, tananyag, PDF, előrejelzés, magyar, iskola"
+    />
+    <meta name="author" content="DogaAI csapat" />
+    <meta
+      property="og:title"
+      content="DogaAI – Dolgozat kérdések előrejelzése AI segítségével"
+    />
+    <meta
+      property="og:description"
+      content="Töltsd fel a tananyagot PDF-ben, és nézd meg, milyen kérdésekre számíthatsz a dolgozatban."
+    />
+    <meta
+      property="og:image"
+      content="https://dogaai.netlify.app/thumbnail.png"
+    />
+    <meta property="og:url" content="https://dogaai.netlify.app" />
+    <meta name="twitter:card" content="summary_large_image" />
+
     <title>DogaAI</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
@@ -11,11 +35,30 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
     <script defer src="app.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-GBS99X76KK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXXXXX");
+    </script>
+    <script src="https://js.stripe.com/v3/"></script>
   </head>
   <body
     class="bg-gradient-to-r from-blue-50 to-white text-gray-800 min-h-screen flex flex-col justify-center items-center px-4"
   >
     <div class="max-w-3xl w-full space-y-8 py-12">
+      <a
+        href="https://buy.stripe.com/test_abc123456789"
+        class="mt-6 px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition text-center block text-lg font-semibold"
+      >
+        Előfizetek 290 Ft / hét
+      </a>
       <div class="text-center">
         <h1
           class="text-5xl font-extrabold text-blue-700 drop-shadow-lg animate-pulse"
